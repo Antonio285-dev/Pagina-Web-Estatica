@@ -10,8 +10,7 @@ body {
     padding-top: 100px;
     padding-bottom: 70px;
 }
-
-/* Sección del mapa */
+/* Sección ubicación */
 #ubicacion {
     padding: 50px 20px;
     text-align: center;
@@ -29,19 +28,51 @@ body {
     margin-bottom: 25px;
 }
 
-/* Contenedor del mapa */
-.mapa {
-    max-width: 900px;
+/* Contenedor del mapa y video */
+.contenedor-ubicacion {
+    max-width: 1300px;
     margin: auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: stretch;
+    padding: 20px;
 }
 
+/* Mapa y video */
+.mapa,
+.video {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+/* Mapa */
 .mapa iframe {
-    display: block;
     width: 100%;
     height: 400px;
+    border: none;
+}
+
+/* Video */
+.video video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-ubicacion {
+        flex-direction: column;
+    }
+
+    .mapa iframe,
+    .video video {
+        height: 300px;
+    }
 }
 
 /* ===========================
@@ -80,27 +111,47 @@ header {
         0 0 5px #00e5ff,
         0 0 20px #00e5ff;
 }
-
-
-/* Navegación */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+.navbar{
+    background:#1f2937 !important;
+    padding:15px 40px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.navbar-brand{
+    color:white !important;
+    font-size:32px;
+    font-weight:bold;
+    text-shadow:
+        0 0 5px #00e5ff,
+        0 0 20px #00e5ff;
+}
+
+.navbar-nav .nav-link{
+    color: white !important;
     font-size: 18px;
     font-weight: bold;
-    transition: .3s;
+    margin-left: 10px;
+    transition: all .3s ease;
+
+    text-shadow:
+        0 0 5px #00e5ff,
+        0 0 20px #00e5ff;
 }
 
-nav ul li a:hover {
-    color: #00ffff;
-}
+.navbar-nav .nav-link:hover{
+    color: #00ffff !important;
 
+    text-shadow:
+        0 0 8px #00ffff,
+        0 0 15px #00ffff,
+        0 0 30px #00ffff;
+
+    transform: scale(1.08);
+}
+.logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+}
 /* ===========================
         SECCIONES
 =========================== */
@@ -512,147 +563,57 @@ D/* ===========================
     color: #E4405F;
 }
 
-/*======================================
-        DISEÑO RESPONSIVO
-======================================*/
-/* Pantallas menores a 1200px */
-@media (max-width:1200px){
-    header{
-        padding:15px 20px;
-    }
-    .mision-vision{
-        flex-wrap:wrap;
-    }
-    .tarjeta{
-        min-width:300px;
-    }
-    .footer-contenedor{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:30px;
-    }
+/* ==========================
+   ALIADOS ESTRATÉGICOS
+========================== */
+
+.aliados{
+    padding: 70px 10%;
+    background: #fff;
+    text-align: center;
 }
 
-/* Tablets */
-@media (max-width:768px){
-    body{
-        padding-top:150px;
-    }
-    header{
-        flex-direction:column;
-        height:auto;
-        padding:15px;
-    }
-    .logo-container{
-        margin-bottom:15px;
-    }
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-    nav ul li a{
-        font-size:16px;
-    }
-    .contenedor{
-        flex-direction:column;
-        align-items:center;
-    }
-    .producto{
-        width:90%;
-        max-width:350px;
-    }
-    .mision-vision{
-        flex-direction:column;
-        padding:20px;
-    }
-    .tarjeta{
-        width:100%;
-    }
-    .contenedor-testimonios{
-        flex-direction:column;
-        align-items:center;
-    }
-    .testimonio{
-        width:90%;
-    }
-    .tabla-productos{
-        display:block;
-        overflow-x:auto;
-        white-space:nowrap;
-    }
-    .footer-contenedor{
-        grid-template-columns:1fr 1fr;
-    }
+.aliados h2{
+    font-size: 2.2rem;
+    color: #000000;
+    margin-bottom: 15px;
 }
 
-/* Celulares */
-@media (max-width:480px){
-    body{
-        padding-top:190px;
-    }
-    .logo{
-        width:55px;
-        height:55px;
-    }
-    .logo-container h1{
-        font-size:24px;
-        text-align:center;
-    }
-    nav ul{
-        flex-direction:column;
-        align-items:center;
-        gap:10px;
-    }
-    .seccion{
-        padding:25px 15px;
-    }
-    h2{
-        font-size:28px;
-    }
-    .nosotros{
-        padding:20px;
-    }
-    .nosotros h2{
-        font-size:28px;
-    }
-    .nosotros p{
-        font-size:16px;
-    }
-    .imagen-nosotros img{
-        width:170px;
-        height:170px;
-    }
-    .tarjeta h2{
-        font-size:28px;
-    }
-    .tarjeta p{
-        font-size:16px;
-    }
-    .producto{
-        width:100%;
-    }
-    .testimonio{
-        width:100%;
-    }
-    .mapa iframe{
-        height:280px;
-    }
-    .footer-contenedor{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-    .footer-seccion{
-        width:100%;
-    }
-    .footer-seccion p{
-        text-align:center;
-    }
-    .footer-seccion ul{
-        padding-left:0;
-        list-style:none;
-    }
-    .footer-seccion a{
-        justify-content:center;
-    }
+.aliados p{
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.aliados-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.aliado{
+    width: 220px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+    transition: .3s;
+}
+
+.aliado:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.aliado img{
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.aliado h3{
+    color: #333;
+    font-size: 1.2rem;
 }
