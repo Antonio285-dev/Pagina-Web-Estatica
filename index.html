@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Electrónica</title>
+    <link rel="icon" href="img/Logo.png">
     <!-- Enlace a tu archivo CSS personalizado -->
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -18,444 +19,538 @@
 
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Logo de la tienda" class="logo">
-            <h1>Tienda Electrónica</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#mision">Mision/Vision</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="inicio" class="seccion">
-        <h2>Bienvenido</h2>
-        <p>Encuentra los mejores productos tecnológicos al mejor precio.</p>
-    </section>
-
-    <section id="nosotros" class="seccion">
-
-        <section class="nosotros">
-            <div class="imagen-nosotros">
-                <img src="img/satisfecho.png" alt="Sobre Nosotros">
-            </div>
-            <h2>Sobre Nosotros</h2>
-
-            <p>
-                En nuestra tienda electrónica nos dedicamos a ofrecer una amplia variedad de productos tecnológicos de
-                alta
-                calidad para satisfacer las necesidades de nuestros clientes. Nuestro objetivo es brindar una
-                experiencia de
-                compra confiable, sencilla y segura, ofreciendo equipos modernos, accesorios y dispositivos de las
-                mejores
-                marcas a precios competitivos.
-            </p>
-
-            <p>
-                Creemos que la tecnología es una herramienta fundamental para facilitar las actividades diarias, el
-                estudio,
-                el trabajo y el entretenimiento. Por ello, seleccionamos cuidadosamente cada uno de nuestros productos
-                para
-                garantizar su calidad, rendimiento y durabilidad. En nuestro catálogo podrás encontrar teléfonos
-                inteligentes, computadoras, laptops, tablets, audífonos, bocinas, teclados, mouse, componentes para
-                computadoras, dispositivos inteligentes para el hogar, consolas de videojuegos y una gran variedad de
-                accesorios tecnológicos.
-            </p>
-
-            <p>
-                Nuestro compromiso no solo es ofrecer productos de excelente calidad, sino también proporcionar una
-                atención
-                al cliente cercana y profesional. Contamos con un equipo dispuesto a asesorarte antes, durante y después
-                de
-                tu compra, resolviendo tus dudas y ayudándote a elegir el producto que mejor se adapte a tus necesidades
-                y
-                presupuesto.
-            </p>
-        </section>
-    </section>
-
-
-    <section id="mision" class="seccion">
-        <section class="mision-vision">
-
-            <div class="tarjeta">
-                <h2>Misión</h2>
-                <p>
-                    Brindar a nuestros clientes productos electrónicos de alta calidad,
-                    ofreciendo una experiencia de compra segura, confiable y accesible.
-                    Nos comprometemos a proporcionar tecnología innovadora, atención
-                    personalizada y precios competitivos que satisfagan las necesidades
-                    de cada persona, fomentando la confianza y el compromiso con nuestros
-                    consumidores.
-                </p>
+    <!mostrar el navegador>
+        <header>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+                <h1>Tienda Electrónica</h1>
             </div>
 
-            <div class="tarjeta">
-                <h2>Visión</h2>
-                <p>
-                    Ser una de las tiendas electrónicas más reconocidas por la calidad de
-                    nuestros productos, la excelencia en el servicio al cliente y la
-                    innovación constante. Buscamos consolidarnos como un referente en el
-                    mercado tecnológico, ofreciendo soluciones que mejoren la vida de las
-                    personas y contribuyan al desarrollo de la tecnología.
-                </p>
-            </div>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        </section>
-    </section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
 
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="img/logo.png" width="60" class="me-2">
+                        Tienda Electrónica
+                    </a>
 
-    <section id="productos" class="seccion">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
-        <section id="productos" class="seccion">
-            <h2>Productos</h2>
+                        <span class="navbar-toggler-icon"></span>
 
-            <div class="contenedor">
+                    </button>
 
-                <div class="producto">
-                    <img src="img/asus.png" alt="Laptop">
-                    <h3>Laptop Asus</h3>
-                    <p>$2500</p>
-                </div>
+                    <div class="collapse navbar-collapse" id="menu">
 
-                <div class="producto">
-                    <img src="img/iphone.jpeg" alt="Celular">
-                    <h3>Celular iphone</h3>
-                    <p>$3000</p>
-                </div>
+                        <ul class="navbar-nav ms-auto">
 
-                <div class="producto">
-                    <img src="img/headphones.png" alt="Audífonos">
-                    <h3>Audífonos</h3>
-                    <p>$80</p>
-                </div>
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#mision">Misión</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
 
-                <div class="producto">
-                    <img src="img/sony.png" alt="Audífonos">
-                    <h3>Audífonos Sony</h3>
-                    <p>$200</p>
-                </div>
-            </div>
+                        </ul>
 
-            <div class="contenedor">
-                <div class="producto">
-                    <img src="img/xiaomi.jpg" alt="Audífonos">
-                    <h3>Xiaomi</h3>
-                    <p>$2500</p>
-                </div>
-
-                <div class="producto">
-                    <img src="img/macbook.png" alt="Audífonos">
-                    <h3>Macbook</h3>
-                    <p>$5599</p>
-                </div>
-
-                <div class="producto">
-                    <img src="img/msi.png" alt="Audífonos">
-                    <h3>Laptop msi</h3>
-                    <p>$2499</p>
-                </div>
-
-                <div class="producto">
-                    <img src="img/nikon.jpg" alt="Audífonos">
-                    <h3>Camara</h3>
-                    <p>$3000</p>
-                </div>
-            </div>
-            <div class="contenedor">
-
-                <div class="producto">
-                    <img src="img/switch.jpg" alt="Audífonos">
-                    <h3>Nintendo Switch</h3>
-                    <p>$3499</p>
-                </div>
-
-                <div class="producto">
-                    <img src="img/A16.jpg" alt="Audífonos">
-                    <h3>Nintendo Switch</h3>
-                    <p>$2499</p>
-                </div>
-        </section>
-    </section>
-
-    <section id="servicios" class="seccion">
-
-        <h2>Servicios y Características</h2>
-
-        <p>
-            En nuestra tienda electrónica ofrecemos diferentes servicios para
-            brindar una mejor experiencia de compra a nuestros clientes.
-        </p>
-
-
-        <!-- Lista ordenada -->
-        <div class="informacion">
-
-            <h3>Proceso de compra</h3>
-
-            <ol>
-                <li>Seleccionar el producto tecnológico deseado.</li>
-                <li>Consultar disponibilidad y características.</li>
-                <li>Realizar el pedido mediante nuestro formulario de contacto.</li>
-                <li>Confirmar método de pago y entrega.</li>
-                <li>Recibir el producto en excelentes condiciones.</li>
-            </ol>
-
-
-            <!-- Lista desordenada -->
-
-            <h3>Servicios que ofrecemos</h3>
-
-            <ul>
-                <li>Venta de celulares y computadoras.</li>
-                <li>Accesorios tecnológicos originales.</li>
-                <li>Asesoría personalizada para elegir productos.</li>
-                <li>Soporte técnico para dispositivos electrónicos.</li>
-                <li>Garantía en productos seleccionados.</li>
-            </ul>
-
-        </div>
-
-    </section>
-
-    <section id="servicios" class="seccion"> <!-- Tabla -->
-
-        <h3>Catálogo de productos disponibles</h3>
-
-        <table class="tabla-productos">
-
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Marca</th>
-                    <th>Categoría</th>
-                    <th>Precio</th>
-                    <th>Disponibilidad</th>
-                </tr>
-            </thead>
-
-
-            <tbody>
-
-                <tr>
-                    <td>Laptop</td>
-                    <td>Asus</td>
-                    <td>Computadora</td>
-                    <td>$900</td>
-                    <td>Disponible</td>
-                </tr>
-
-
-                <tr>
-                    <td>iPhone</td>
-                    <td>Apple</td>
-                    <td>Celular</td>
-                    <td>$600</td>
-                    <td>Disponible</td>
-                </tr>
-
-
-                <tr>
-                    <td>Audífonos</td>
-                    <td>Sony</td>
-                    <td>Accesorio</td>
-                    <td>$80</td>
-                    <td>Disponible</td>
-                </tr>
-
-
-                <tr>
-                    <td>MacBook</td>
-                    <td>Apple</td>
-                    <td>Computadora</td>
-                    <td>$1200</td>
-                    <td>Bajo pedido</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </section>
-
-    <section id="testimonios" class="seccion">
-
-        <h2 class="titulo-testimonios">Testimonios</h2>
-
-        <p class="descripcion-testimonios">
-            Opiniones de nuestros clientes sobre nuestros productos y servicio.
-        </p>
-
-
-        <div class="contenedor-testimonios">
-            <div class="testimonio">
-                <img src="img/Juan_perez.avif" alt="Cliente">
-                <h3>Juan Pérez</h3>
-                <p>
-                    "Excelente tienda, compré una laptop y llegó en perfectas condiciones.
-                    La atención fue rápida y el producto superó mis expectativas."
-                </p>
-                <div class="estrellas">
-                    ★★★★★
-                </div>
-            </div>
-
-            <div class="testimonio">
-                <img src="img/Maria_Lopez.jpg" alt="Cliente">
-                <h3>María López</h3>
-                <p>
-                    "Muy buenos productos y precios accesibles.
-                    Compré unos audífonos y tienen una excelente calidad de sonido."
-                </p>
-                <div class="estrellas">
-                    ★★★★★
-                </div>
-
-            </div>
-            <div class="testimonio">
-                <img src="img/Carlos Ramirez.jpg" alt="Cliente">
-                <h3>Carlos Ramírez</h3>
-                <p>
-                    "La experiencia de compra fue muy buena.
-                    Me ayudaron a elegir el celular adecuado y recibí una excelente atención."
-                </p>
-                <div class="estrellas">
-                    ★★★★★
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section id="contacto" class="zona-contacto">
-
-        <div class="contenedor-contacto">
-            <div class="tarjeta-formulario">
-                <h2>Contacto</h2>
-
-                <form id="contactForm">
-                    <div class="grupo-campo">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Tu nombre" required>
                     </div>
 
-                    <div class="grupo-campo">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
+                </div>
+            </nav>
+        </header>
 
-                    <div class="grupo-campo">
-                        <label for="telefono">telefono</label>
-                        <input type="telefono" id="telefono" placeholder="Telefono" required>
-                    </div>
+        <!Seccion de inicio>
+            <section id="inicio" class="seccion">
+                <h2>Bienvenido</h2>
+                <p>Encuentra los mejores productos tecnológicos al mejor precio.</p>
+            </section>
 
-                    <div class="grupo-campo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                    </div>
 
-                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
-                </form>
+            <!Seccion de nosotros>
+                <section id="nosotros" class="seccion">
+                    <section class="nosotros">
+                        <div class="imagen-nosotros">
+                            <img src="img/satisfecho.png" alt="Sobre Nosotros">
+                        </div>
+                        <h2>Sobre Nosotros</h2>
 
-            </div>
+                        <p>
+                            En nuestra tienda electrónica nos dedicamos a ofrecer una amplia variedad de productos
+                            tecnológicos de
+                            alta
+                            calidad para satisfacer las necesidades de nuestros clientes. Nuestro objetivo es brindar
+                            una
+                            experiencia de
+                            compra confiable, sencilla y segura, ofreciendo equipos modernos, accesorios y dispositivos
+                            de las
+                            mejores
+                            marcas a precios competitivos.
+                        </p>
+
+                        <p>
+                            Creemos que la tecnología es una herramienta fundamental para facilitar las actividades
+                            diarias, el
+                            estudio,
+                            el trabajo y el entretenimiento. Por ello, seleccionamos cuidadosamente cada uno de nuestros
+                            productos
+                            para
+                            garantizar su calidad, rendimiento y durabilidad. En nuestro catálogo podrás encontrar
+                            teléfonos
+                            inteligentes, computadoras, laptops, tablets, audífonos, bocinas, teclados, mouse,
+                            componentes para
+                            computadoras, dispositivos inteligentes para el hogar, consolas de videojuegos y una gran
+                            variedad de
+                            accesorios tecnológicos.
+                        </p>
+
+                        <p>
+                            Nuestro compromiso no solo es ofrecer productos de excelente calidad, sino también
+                            proporcionar una
+                            atención
+                            al cliente cercana y profesional. Contamos con un equipo dispuesto a asesorarte antes,
+                            durante y después
+                            de
+                            tu compra, resolviendo tus dudas y ayudándote a elegir el producto que mejor se adapte a tus
+                            necesidades
+                            y
+                            presupuesto.
+                        </p>
+                    </section>
+                </section>
+
+                <!Seccion de mision>
+                    <section id="mision" class="seccion">
+                        <section class="mision-vision">
+
+                            <div class="tarjeta">
+                                <h2>Misión</h2>
+                                <p>
+                                    Brindar a nuestros clientes productos electrónicos de alta calidad,
+                                    ofreciendo una experiencia de compra segura, confiable y accesible.
+                                    Nos comprometemos a proporcionar tecnología innovadora, atención
+                                    personalizada y precios competitivos que satisfagan las necesidades
+                                    de cada persona, fomentando la confianza y el compromiso con nuestros
+                                    consumidores.
+                                </p>
+                            </div>
+
+                            <div class="tarjeta">
+                                <h2>Visión</h2>
+                                <p>
+                                    Ser una de las tiendas electrónicas más reconocidas por la calidad de
+                                    nuestros productos, la excelencia en el servicio al cliente y la
+                                    innovación constante. Buscamos consolidarnos como un referente en el
+                                    mercado tecnológico, ofreciendo soluciones que mejoren la vida de las
+                                    personas y contribuyan al desarrollo de la tecnología.
+                                </p>
+                            </div>
+
+                        </section>
+                    </section>
+
+                    <!Seccion de productos>
+                        <section id="productos" class="seccion">
+
+                            <section id="productos" class="seccion">
+                                <h2>Productos</h2>
+
+                                <div class="contenedor">
+
+                                    <div class="producto">
+                                        <img src="img/asus.png" alt="Laptop">
+                                        <h3>Laptop Asus</h3>
+                                        <p>$2500</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/iphone.jpeg" alt="Celular">
+                                        <h3>Celular iphone</h3>
+                                        <p>$3000</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/headphones.png" alt="Audífonos">
+                                        <h3>Audífonos</h3>
+                                        <p>$80</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/sony.png" alt="Audífonos">
+                                        <h3>Audífonos Sony</h3>
+                                        <p>$200</p>
+                                    </div>
+                                </div>
+
+                                <div class="contenedor">
+                                    <div class="producto">
+                                        <img src="img/xiaomi.jpg" alt="Audífonos">
+                                        <h3>Xiaomi</h3>
+                                        <p>$2500</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/macbook.png" alt="Audífonos">
+                                        <h3>Macbook</h3>
+                                        <p>$5599</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/msi.png" alt="Audífonos">
+                                        <h3>Laptop msi</h3>
+                                        <p>$2499</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/nikon.jpg" alt="Audífonos">
+                                        <h3>Camara</h3>
+                                        <p>$3000</p>
+                                    </div>
+                                </div>
+                                <div class="contenedor">
+
+                                    <div class="producto">
+                                        <img src="img/switch.jpg" alt="Audífonos">
+                                        <h3>Nintendo Switch</h3>
+                                        <p>$3499</p>
+                                    </div>
+
+                                    <div class="producto">
+                                        <img src="img/A16.jpg" alt="Audífonos">
+                                        <h3>Nintendo Switch</h3>
+                                        <p>$2499</p>
+                                    </div>
+                            </section>
+                        </section>
+
+                                           <!Seccion de servicios>
+                            <section id="servicios" class="seccion">
+
+                                <h2>Servicios y Características</h2>
+
+                                <p>
+                                    En nuestra tienda electrónica ofrecemos diferentes servicios para
+                                    brindar una mejor experiencia de compra a nuestros clientes.
+                                </p>
+
+
+                                <!-- Lista ordenada -->
+                                <div class="informacion">
+
+                                    <h3>Proceso de compra</h3>
+
+                                    <ol>
+                                        <li>Seleccionar el producto tecnológico deseado.</li>
+                                        <li>Consultar disponibilidad y características.</li>
+                                        <li>Realizar el pedido mediante nuestro formulario de contacto.</li>
+                                        <li>Confirmar método de pago y entrega.</li>
+                                        <li>Recibir el producto en excelentes condiciones.</li>
+                                    </ol>
+
+
+                                    <!-- Lista desordenada -->
+
+                                    <h3>Servicios que ofrecemos</h3>
+
+                                    <ul>
+                                        <li>Venta de celulares y computadoras.</li>
+                                        <li>Accesorios tecnológicos originales.</li>
+                                        <li>Asesoría personalizada para elegir productos.</li>
+                                        <li>Soporte técnico para dispositivos electrónicos.</li>
+                                        <li>Garantía en productos seleccionados.</li>
+                                    </ul>
+
+                                </div>
+
+                            </section>
+
+                            <!Tabla de servicios>
+                                <section id="servicios" class="seccion"> <!-- Tabla -->
+
+                                    <h3>Catálogo de productos disponibles</h3>
+
+                                    <table class="tabla-productos">
+
+                                        <thead>
+                                            <tr>
+                                                <th>Producto</th>
+                                                <th>Marca</th>
+                                                <th>Categoría</th>
+                                                <th>Precio</th>
+                                                <th>Disponibilidad</th>
+                                            </tr>
+                                        </thead>
+
+
+                                        <tbody>
+
+                                            <tr>
+                                                <td>Laptop</td>
+                                                <td>Asus</td>
+                                                <td>Computadora</td>
+                                                <td>$900</td>
+                                                <td>Disponible</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>iPhone</td>
+                                                <td>Apple</td>
+                                                <td>Celular</td>
+                                                <td>$600</td>
+                                                <td>Disponible</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Audífonos</td>
+                                                <td>Sony</td>
+                                                <td>Accesorio</td>
+                                                <td>$80</td>
+                                                <td>Disponible</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>MacBook</td>
+                                                <td>Apple</td>
+                                                <td>Computadora</td>
+                                                <td>$1200</td>
+                                                <td>Bajo pedido</td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </section>
+
+                                <!Seccion de testimonios>
+                                    <section id="testimonios" class="seccion">
+
+                                        <h2 class="titulo-testimonios">Testimonios</h2>
+
+                                        <p class="descripcion-testimonios">
+                                            Opiniones de nuestros clientes sobre nuestros productos y servicio.
+                                        </p>
+
+
+                                        <div class="contenedor-testimonios">
+                                            <div class="testimonio">
+                                                <img src="img/Juan_perez.avif" alt="Cliente">
+                                                <h3>Juan Pérez</h3>
+                                                <p>
+                                                    "Excelente tienda, compré una laptop y llegó en perfectas
+                                                    condiciones.
+                                                    La atención fue rápida y el producto superó mis expectativas."
+                                                </p>
+                                                <div class="estrellas">
+                                                    ★★★★★
+                                                </div>
+                                            </div>
+
+                                            <div class="testimonio">
+                                                <img src="img/Maria_Lopez.jpg" alt="Cliente">
+                                                <h3>María López</h3>
+                                                <p>
+                                                    "Muy buenos productos y precios accesibles.
+                                                    Compré unos audífonos y tienen una excelente calidad de sonido."
+                                                </p>
+                                                <div class="estrellas">
+                                                    ★★★★★
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonio">
+                                                <img src="img/Carlos Ramirez.jpg" alt="Cliente">
+                                                <h3>Carlos Ramírez</h3>
+                                                <p>
+                                                    "La experiencia de compra fue muy buena.
+                                                    Me ayudaron a elegir el celular adecuado y recibí una excelente
+                                                    atención."
+                                                </p>
+                                                <div class="estrellas">
+                                                    ★★★★★
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </section>
+
+                                         <!-- Aliados Estratégicos -->
+<section id="aliados" class="seccion aliados">
+    <h2>Aliados Estratégicos</h2>
+    <p>Trabajamos con las mejores marcas para ofrecer productos originales y de alta calidad.</p>
+
+    <div class="aliados-contenedor">
+
+        <div class="aliado">
+            <img src="img/apple.png">
+            <h3>Apple</h3>
         </div>
-    </section>
 
-
-    <section id="ubicacion" class="seccion">
-        <h2>Ubicación</h2>
-        <p>Visítanos en Canalejas, Estado de México.</p>
-    </section>
-    <section id="contacto" class="zona-contacto">
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps?q=Canalejas,Jilotepec,Estado+de+México&output=embed" width="100%"
-                height="400" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
+        <div class="aliado">
+            <img src="img/samsung.png" alt="Samsung">
+            <h3>Samsung</h3>
         </div>
 
-        <div class="video">
-          <iframe
-    width="1233"
-    height="694"
-    src="https://www.youtube.com/embed/h0cf2z3lrz4?autoplay=1&mute=1"
-    title="Video para vender accesorios para celular o computadoras"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
+        <div class="aliado">
+            <img src="img/Asuss.png">
+            <h3>ASUS</h3>
         </div>
 
-    </section>
-
-    <!-- Enlace al JavaScript -->
-    <script src="script.js"></script>
-
-    <footer>
-        <div class="footer-contenedor">
-            <!-- Información de la tienda -->
-            <div class="footer-seccion">
-                <h3>Redes Socioales</h3>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            </div>
-
-            <!-- Avisos -->
-            <div class="footer-seccion">
-                <h3>Avisos</h3>
-                <ul>
-                    <li>Términos y condiciones de compra.</li>
-                    <li>Los precios pueden cambiar sin previo aviso.</li>
-                    <li>Los productos cuentan con garantía según fabricante.</li>
-                    <li>Tiempo de entrega sujeto a disponibilidad.</li>
-                </ul>
-            </div>
-
-            <!-- Política de privacidad -->
-            <div class="footer-seccion">
-                <h3>Política de privacidad</h3>
-                <p>
-                    Protegemos los datos personales proporcionados por nuestros
-                    clientes. La información utilizada en formularios de contacto
-                    será únicamente para brindar atención y mejorar nuestros servicios.
-                </p>
-            </div>
-
-            <!-- Contacto -->
-            <div class="footer-seccion">
-                <h3>Contacto</h3>
-                <p>
-                    📍 Canalejas, Jilotepec, Estado de México
-                </p>
-                <p>
-                    📞 Teléfono: 555-123-4567
-                </p>
-                <p>
-                    ✉ Correo: contacto@tiendaelectronica.com
-                </p>
-                <p>
-                    Horario:
-                    Lunes - Sábado 9:00 AM - 6:00 PM
-                </p>
-            </div>
+        <div class="aliado">
+            <img src="img/Sonyy.png" alt="Sony">
+            <h3>Sony</h3>
         </div>
 
-        <div class="footer-final">
-            <p>
-                © 2026 Tienda Electrónica |
-                Todos los derechos reservados
-            </p>
-        </div>
-    </footer>
+    </div>
+</section>
+
+
+                                    <!Seccion de ubicacion y video>
+                                        <section id="ubicacion" class="seccion">
+                                            <h2>Ubicación</h2>
+                                            <p>Visítanos en Canalejas, Estado de México.</p>
+                                        </section>
+
+
+                                        <div class="contenedor-ubicacion">
+
+                                            <!-- Mapa -->
+                                            <div class="mapa">
+                                                <iframe
+                                                    src="https://www.google.com/maps?q=Canalejas,Jilotepec,Estado+de+México&output=embed"
+                                                    allowfullscreen="" loading="lazy">
+                                                </iframe>
+                                            </div>
+
+                                            <!-- Video -->
+                                            <div class="video">
+                                                <iframe title="vimeo-player"
+                                                    src="https://player.vimeo.com/video/269224700?h=dcc2904600"
+                                                    width="640" height="360" frameborder="0"
+                                                    referrerpolicy="strict-origin-when-cross-origin"
+                                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                                    allowfullscreen></iframe>
+                                            </div>
+
+                                        </div>
+
+                                        </section>
+
+
+                                        <!Seccion de contacto>
+                                            <section id="contacto" class="zona-contacto">
+
+                                                <div class="contenedor-contacto">
+                                                    <div class="tarjeta-formulario">
+                                                        <h2>Contacto</h2>
+
+                                                        <form id="contactForm">
+                                                            <div class="grupo-campo">
+                                                                <label for="nombre">Nombre</label>
+                                                                <input type="text" id="nombre" placeholder="Tu nombre"
+                                                                    required>
+                                                            </div>
+
+                                                            <div class="grupo-campo">
+                                                                <label for="email">Email</label>
+                                                                <input type="email" id="email" placeholder="Email" required>
+                                                            </div>
+
+                                                            <div class="grupo-campo">
+                                                                <label for="telefono">telefono</label>
+                                                                <input type="telefono" id="telefono"
+                                                                    placeholder="Telefono" required>
+                                                            </div>
+
+                                                            <div class="grupo-campo">
+                                                                <label for="mensaje">Mensaje</label>
+                                                                <textarea id="mensaje" rows="4"
+                                                                    placeholder="Escribe tu mensaje"
+                                                                    required></textarea>
+                                                            </div>
+
+                                                            <button type="submit" class="btn-enviar">Enviar
+                                                                mensaje</button>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </section>
+
+
+
+                                            <script src="script.js"></script>
+
+                                            <!Footer o pie de pagina>
+                                                <footer>
+                                                    <div class="footer-contenedor">
+                                                        <!-- Información de la tienda -->
+                                                        <div class="footer-seccion">
+                                                            <h3>Redes Socioales</h3>
+                                                            <a href="https://www.facebook.com/"
+                                                                target="_blank">Facebook</a>
+                                                            <a href="https://www.instagram.com/"
+                                                                target="_blank">Instagram</a>
+                                                        </div>
+
+                                                        <!-- Avisos -->
+                                                        <div class="footer-seccion">
+                                                            <h3>Avisos</h3>
+                                                            <ul>
+                                                                <li>Términos y condiciones de compra.</li>
+                                                                <li>Los precios pueden cambiar sin previo aviso.</li>
+                                                                <li>Los productos cuentan con garantía según fabricante.
+                                                                </li>
+                                                                <li>Tiempo de entrega sujeto a disponibilidad.</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <!-- Política de privacidad -->
+                                                        <div class="footer-seccion">
+                                                            <h3>Política de privacidad</h3>
+                                                            <p>
+                                                                Protegemos los datos personales proporcionados por
+                                                                nuestros
+                                                                clientes. La información utilizada en formularios de
+                                                                contacto
+                                                                será únicamente para brindar atención y mejorar nuestros
+                                                                servicios.
+                                                            </p>
+                                                        </div>
+
+                                                        <!-- Contacto -->
+                                                        <div class="footer-seccion">
+                                                            <h3>Contacto</h3>
+                                                            <p>
+                                                                📍 Canalejas, Jilotepec, Estado de México
+                                                            </p>
+                                                            <p>
+                                                                📞 Teléfono: 555-123-4567
+                                                            </p>
+                                                            <p>
+                                                                ✉ Correo: contacto@tiendaelectronica.com
+                                                            </p>
+                                                            <p>
+                                                                Horario:
+                                                                Lunes - Sábado 9:00 AM - 6:00 PM
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="footer-final">
+                                                        <p>
+                                                            © 2026 Tienda Electrónica |
+                                                            Todos los derechos reservados
+                                                        </p>
+                                                    </div>
+                                                </footer>
+                                                <script
+                                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
