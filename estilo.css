@@ -617,3 +617,252 @@ D/* ===========================
     color: #333;
     font-size: 1.2rem;
 }
+
+/*====================================
+        RESPONSIVE GENERAL
+=====================================*/
+
+html{
+    scroll-behavior:smooth;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Todas las secciones */
+.seccion{
+    padding:70px 6%;
+}
+
+/* Títulos */
+
+h1{
+    font-size:clamp(1.8rem,4vw,2.8rem);
+}
+
+h2{
+    font-size:clamp(1.6rem,3vw,2.3rem);
+}
+
+h3{
+    font-size:clamp(1.1rem,2vw,1.4rem);
+}
+
+p,
+li{
+    font-size:clamp(.95rem,1.5vw,1.1rem);
+}
+
+/* Productos */
+
+.contenedor{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin:auto;
+}
+
+.producto{
+
+    width:100%;
+}
+
+/* Tarjetas misión */
+
+.mision-vision{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+/* Testimonios */
+
+.contenedor-testimonios{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+/* Aliados */
+
+.aliados-contenedor{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+    align-items:center;
+}
+
+/* Formulario */
+
+.contenedor-contacto{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+/* Tabla */
+
+.tabla-productos{
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+}
+
+/* Ubicación */
+
+.contenedor-ubicacion{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:25px;
+}
+
+.mapa iframe,
+.video iframe{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    height:auto;
+}
+
+/* Footer */
+
+.footer-contenedor{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+/*====================================
+        TABLETS
+=====================================*/
+
+@media(max-width:992px){
+
+    body{
+
+        padding-top:80px;
+    }
+
+    .navbar-brand{
+
+        font-size:24px;
+    }
+
+    .navbar-brand img{
+
+        width:45px;
+    }
+
+    .navbar-nav{
+
+        text-align:center;
+    }
+
+    .logo-container{
+
+        display:none;
+    }
+
+}
+
+/*====================================
+        CELULARES
+=====================================*/
+
+@media(max-width:768px){
+
+    .seccion{
+
+        padding:50px 20px;
+    }
+
+    .producto{
+
+        padding:15px;
+    }
+
+    .producto img{
+
+        height:180px;
+
+        object-fit:contain;
+    }
+
+    .tarjeta{
+
+        padding:20px;
+    }
+
+}
+
+/*====================================
+        CELULARES PEQUEÑOS
+=====================================*/
+
+@media(max-width:480px){
+
+    h1{
+
+        font-size:1.7rem;
+    }
+
+    h2{
+
+        font-size:1.5rem;
+    }
+
+    p{
+
+        font-size:.95rem;
+    }
+
+    .navbar-brand{
+
+        font-size:20px;
+    }
+
+    .navbar-brand img{
+
+        width:40px;
+    }
+
+}
