@@ -502,22 +502,17 @@ footer {
 }
 
 /* TABLA */
-.tabla-productos {
-    width:90%;
-    margin:40px auto;
+.tabla-productos{
+    width:100%;
+    table-layout:fixed;
     border-collapse:collapse;
     background:white;
-    box-shadow:0 8px 20px rgba(31, 7, 170, 0.616);
+    box-shadow:0 8px 20px rgba(31,7,170,.6);
 }
 
-.tabla-productos th {
-    background:#0d3770;
-    text-align: center;
-    color:white;
-    padding:15px;
-}
-
-.tabla-productos td {
+.tabla-productos th,
+.tabla-productos td{
+    width:20%;
     padding:15px;
     text-align:center;
     border:1px solid #ddd;
