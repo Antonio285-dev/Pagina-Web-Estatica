@@ -504,24 +504,41 @@ footer {
 /* TABLA */
 .tabla-productos{
     width:100%;
-    table-layout:fixed;
+    min-width:700px;
     border-collapse:collapse;
     background:white;
-    box-shadow:0 8px 20px rgba(31,7,170,.6);
+    box-shadow:0 8px 20px rgba(31,7,170,.35);
 }
 
 .tabla-productos th,
 .tabla-productos td{
-    width:20%;
     padding:15px;
     text-align:center;
+    white-space:nowrap;
     border:1px solid #ddd;
 }
 
-.tabla-productos tr:hover {
-    background:#dbeafe;
+.table-responsive{
+    overflow-x:auto;
 }
 
+@media (max-width:768px){
+
+    .tabla-productos{
+
+        min-width:650px;
+
+    }
+
+    .tabla-productos th,
+    .tabla-productos td{
+
+        font-size:15px;
+        padding:12px;
+
+    }
+
+}s
 /* Redes sociales del footer */
 .footer-seccion a{
     display: flex;
