@@ -1,3 +1,6 @@
+/* ========================================== */
+/* 1. REINICIO Y ESTILOS GLOBALES             */
+/* ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +10,8 @@
 
 body {
     background: #dbeafe;
-    padding-top: 100px; /* Espacio para el navbar fixed-top */
-    padding-bottom: 70px;
+    padding-top: 100px; /* Espacio para el navbar fijo */
+    padding-bottom: 50px;
 }
 
 .seccion {
@@ -16,25 +19,27 @@ body {
     text-align: center;
 }
 
-/*Encabezado y navegacion*/
+/* ========================================== */
+/* 2. ENCABEZADO Y NAVEGACIÓN                 */
+/* ========================================== */
 .navbar {
     background: #1f2937 !important;
-    padding: 15px 40px;
+    padding: 15px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
     color: white !important;
-    font-size: 28px;
+    font-size: 24px; /* Un poco más pequeño para que quepa bien */
     font-weight: bold;
     text-shadow: 0 0 5px #00e5ff, 0 0 20px #00e5ff;
 }
 
 .navbar-nav .nav-link {
     color: white !important;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    margin-left: 15px;
+    margin-left: 10px;
     transition: all 0.3s ease;
     text-shadow: 0 0 5px #00e5ff, 0 0 20px #00e5ff;
 }
@@ -42,10 +47,12 @@ body {
 .navbar-nav .nav-link:hover {
     color: #00ffff !important;
     text-shadow: 0 0 8px #00ffff, 0 0 15px #00ffff, 0 0 30px #00ffff;
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
-/*Seccion sobre nosotros*/
+/* ========================================== */
+/* 3. SECCIÓN SOBRE NOSOTROS                  */
+/* ========================================== */
 .nosotros {
     max-width: 1000px;
     margin: 40px auto;
@@ -59,35 +66,37 @@ body {
 }
 
 .imagen-nosotros img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid #00e5ff;
+    border: 5px solid #00e5ff;
 }
 
 .nosotros h2 {
     color: #1f2937;
-    font-size: 36px;
-    margin: 25px 0 15px;
+    font-size: 32px;
+    margin: 20px 0 15px;
 }
 
 .nosotros p {
     color: #333;
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.7;
     text-align: justify;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
-/*Seccion de mision y vision*/
+/* ========================================== */
+/* 4. MISIÓN Y VISIÓN                         */
+/* ========================================== */
 .mision-vision {
     max-width: 1200px;
     margin: 50px auto;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap; 
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .tarjeta {
@@ -95,37 +104,39 @@ body {
     min-width: 300px;
     background: #ffffff;
     box-shadow: 0 8px 20px rgba(31, 7, 170, 0.15);
-    padding: 35px;
+    padding: 30px;
     border-radius: 15px;
 }
 
 .tarjeta h2 {
     color: #1f2937;
     text-align: center;
-    font-size: 34px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .tarjeta p {
     color: #333;
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.7;
     text-align: justify;
 }
 
-/*Seccion de productos*/
+/* ========================================== */
+/* 5. PRODUCTOS                               */
+/* ========================================== */
 .contenedor {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* Hace que los productos bajen de línea automáticamente */
+    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .producto {
     background: white;
-    width: 220px;
-    padding: 20px;
+    width: 200px; /* Ligeramente más pequeño */
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(31, 7, 170, 0.15);
     transition: transform 0.3s ease;
@@ -137,24 +148,26 @@ body {
 
 .producto img {
     width: 100%;
-    height: 150px;
+    height: 130px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .producto h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 17px;
+    margin-bottom: 8px;
     color: #1f2937;
 }
 
 .producto p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #0d6efd;
 }
 
-/*Seccionde srvicios*/
+/* ========================================== */
+/* 6. SERVICIOS Y TABLA                       */
+/* ========================================== */
 .informacion {
     background: white;
     max-width: 900px;
@@ -169,14 +182,14 @@ body {
     color: #0d6efd;
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .informacion ol,
 .informacion ul {
     margin-left: 20px;
-    font-size: 18px;
-    line-height: 2;
+    font-size: 16px;
+    line-height: 1.8;
     color: #333;
 }
 
@@ -191,9 +204,10 @@ body {
 
 .tabla-productos th,
 .tabla-productos td {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     border: 1px solid #ddd;
+    font-size: 15px;
 }
 
 .tabla-productos th {
@@ -202,25 +216,27 @@ body {
     font-weight: bold;
 }
 
-/*Seccion de testimonios*/
+/* ========================================== */
+/* 7. TESTIMONIOS                             */
+/* ========================================== */
 .titulo-testimonios {
-    font-size: 36px;
+    font-size: 32px;
     color: #1f2937;
     margin-bottom: 10px;
 }
 
 .descripcion-testimonios {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .testimonio {
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     margin: auto;
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(31, 7, 170, 0.15);
@@ -228,98 +244,102 @@ body {
 }
 
 .testimonio:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .testimonio img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 4px solid #00e5ff;
+    border: 3px solid #00e5ff;
 }
 
 .testimonio h3 {
     color: #1f2937;
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .testimonio p {
     color: #4b5563;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.5;
     font-style: italic;
 }
 
 .estrellas {
-    margin-top: 15px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 20px;
     color: #facc15;
 }
 
-/*Seccion de aliados*/
+/* ========================================== */
+/* 8. ALIADOS ESTRATÉGICOS                    */
+/* ========================================== */
 .aliados {
     background: #fff;
 }
 
 .aliados h2 {
-    font-size: 2.2rem;
+    font-size: 28px;
     color: #1f2937;
     margin-bottom: 15px;
 }
 
 .aliados p {
     color: #555;
-    margin-bottom: 40px;
-    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-size: 16px;
 }
 
 .aliados-contenedor {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .aliado {
-    width: 220px;
+    width: 180px;
     background: #fff;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .aliado:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .aliado img {
-    width: 120px;
-    height: 80px;
+    width: 100px;
+    height: 60px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .aliado h3 {
     color: #333;
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 
-/*Seccion de ubicacion y video*/
+/* ========================================== */
+/* 9. UBICACIÓN Y VIDEO                       */
+/* ========================================== */
 #ubicacion h2 {
-    font-size: 32px;
+    font-size: 28px;
     color: #333;
     margin-bottom: 10px;
 }
 
 #ubicacion p {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .contenedor-ubicacion {
@@ -327,9 +347,9 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
     align-items: stretch;
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 
 .mapa,
@@ -343,14 +363,16 @@ body {
 .mapa iframe,
 .video iframe {
     width: 100%;
-    height: 400px;
+    height: 350px;
     border: none;
     display: block;
 }
 
-/*Seccion de contacto*/
+/* ========================================== */
+/* 10. FORMULARIO DE CONTACTO                 */
+/* ========================================== */
 .zona-contacto {
-    min-height: calc(100vh - 160px);
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,28 +393,30 @@ body {
 
 .tarjeta-formulario h2 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #1f2937;
+    font-size: 28px;
 }
 
 .grupo-campo {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 .grupo-campo label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-weight: bold;
     color: #495057;
+    font-size: 15px;
 }
 
 .grupo-campo input,
 .grupo-campo textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ced4da;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -420,11 +444,13 @@ body {
     background: #084298;
 }
 
-/*Seccion footer*/
+/* ========================================== */
+/* 11. PIE DE PÁGINA (FOOTER)                 */
+/* ========================================== */
 footer {
     background: #1f2937;
     color: white;
-    padding: 40px 30px 20px;
+    padding: 40px 20px 20px;
     width: 100%;
 }
 
@@ -438,13 +464,13 @@ footer {
 }
 
 .footer-seccion {
-    width: 250px;
+    width: 250px; /* Ancho fijo solo para escritorio */
 }
 
 .footer-seccion h3 {
     color: #00e5ff;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .footer-seccion p {
@@ -459,7 +485,6 @@ footer {
     font-size: 15px;
 }
 
-/*Estilos de redes sociales*/
 .redes-sociales {
     display: flex;
     flex-direction: column;
@@ -471,7 +496,7 @@ footer {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -483,16 +508,11 @@ footer {
 }
 
 .redes-sociales i {
-    font-size: 24px;
+    font-size: 22px;
 }
 
-.fa-facebook {
-    color: #1877F2;
-}
-
-.fa-instagram {
-    color: #E4405F;
-}
+.fa-facebook { color: #1877F2; }
+.fa-instagram { color: #E4405F; }
 
 .footer-final {
     border-top: 1px solid #555;
@@ -506,24 +526,94 @@ footer {
     color: #aaa;
 }
 
-/*Diseño responsivo*/
+/* ========================================================================== */
+/* 12. DISEÑO RESPONSIVO (OPTIMIZADO PARA CELULARES < 768px)                */
+/* ========================================================================== */
 @media (max-width: 768px) {
-    .contenedor-ubicacion {
-        flex-direction: column;
+    /* 1. Reducir padding general para aprovechar la pantalla */
+    body {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    .seccion {
+        padding: 40px 15px;
     }
 
-    .mapa iframe,
-    .video iframe {
-        height: 300px;
+    /* 2. Escalar tipografía hacia abajo para que se vea "más chico" y limpio */
+    h2 { font-size: 24px !important; }
+    h3 { font-size: 18px !important; }
+    p, li { 
+        font-size: 14px !important; 
+        text-align: left !important; /* Evita espacios feos en justificado en móvil */
     }
 
-    .tabla-productos th,
-    .tabla-productos td {
-        font-size: 14px;
+    /* 3. Ajustar tarjetas y contenedores */
+    .nosotros, .tarjeta, .informacion, .tarjeta-formulario {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    .imagen-nosotros img {
+        width: 140px;
+        height: 140px;
+        border-width: 4px;
+    }
+
+    /* 4. PRODUCTOS: Hacerlos un poco más compactos */
+    .producto {
+        width: 45%; /* Que quepan 2 por fila en celular */
+        min-width: 140px;
         padding: 10px;
     }
+    .producto img { height: 100px; }
+    .producto h3 { font-size: 15px; }
+    .producto p { font-size: 16px; }
 
-    .navbar-brand {
-        font-size: 22px;
+    /* 5. MAPA Y VIDEO: Apilar y reducir altura */
+    .contenedor-ubicacion {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .mapa iframe, .video iframe {
+        height: 250px;
+    }
+
+    /* 6. TABLA: Letra más pequeña para que quepa mejor */
+    .tabla-productos th, .tabla-productos td {
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+
+    /* ========================================================================== */
+    /* 7. FOOTER COMPLETO Y OPTIMIZADO PARA CELULAR                               */
+    /* ========================================================================== */
+    footer {
+        padding: 30px 15px 15px;
+    }
+    .footer-contenedor {
+        flex-direction: column;       /* Apila las secciones una debajo de otra */
+        align-items: center;          /* Centra todo el bloque */
+        gap: 25px;                    /* Espacio uniforme entre secciones */
+    }
+    .footer-seccion {
+        width: 100%;                  /* Ocupa todo el ancho disponible */
+        max-width: 100%;              /* Elimina la restricción de 250px */
+        text-align: center;           /* Centra el texto para mejor lectura en móvil */
+    }
+    .footer-seccion p, 
+    .footer-seccion ul {
+        text-align: center;           /* Sobrescribe el justify del escritorio */
+        font-size: 14px;
+    }
+    .footer-seccion ul {
+        padding-left: 0;              /* Quita la sangría de la lista en móvil */
+        list-style-position: inside;  /* Mantiene las viñetas ordenadas */
+    }
+    .redes-sociales {
+        align-items: center;          /* Centra los iconos de redes sociales */
+    }
+    .footer-final p {
+        font-size: 12px;
+        padding: 0 10px;
+        line-height: 1.4;
     }
 }
